@@ -4,7 +4,7 @@
 
 .container {
   margin: 5% auto;
-  width: 90%;
+  width: 60%;
 }
 
 .section {
@@ -17,19 +17,19 @@
 
 body {
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
-  background-color: #111111;
+  background-color: #FFFFFF;
   border: 40px solid #;
   /*color: #777777;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 5.5em;
-  color: #FAFAFA;
+  line-height: 25px;
+  color: #363636;
 
 }
 
 .bigfont {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: inherit;
 }
 
