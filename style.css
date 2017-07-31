@@ -2,6 +2,16 @@
       color:white;
 }
 
+#header {
+  position: fixed;
+  top:0;
+
+}
+
+#header. p {
+  display:inline-block;
+}
+
 .container {
   margin: 5% auto;
   width: 60%;
@@ -24,6 +34,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 25px;
   color: #363636;
+  font-size: 18px;
 
 }
 
@@ -63,16 +74,18 @@ a:hover {
     }
 
       .bigfont {
-        font-size: 40px;
+        font-size: 60px;
       }
 
       .content-big {
-        font-size: 20px;
+        font-size: 30px;
       }
 }
 
 
-
+h2 {
+  border-bottom: 0px;
+}
 
 
 
