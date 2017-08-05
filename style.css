@@ -3,13 +3,19 @@
 }
 
 #header {
-  position: fixed;
+  flex-direction: column;
   top:0;
-
+  display: flex;
 }
 
-#header. p {
-  display:inline-block;
+
+
+#header li {
+  position: relative;
+  display: inline;
+  float: left;
+  margin-right: 40px;
+  /*display:inline-block;*/
 }
 
 .container {
