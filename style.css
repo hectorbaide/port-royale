@@ -19,8 +19,8 @@
 }
 
 .container {
-  margin: 5% auto;
-  width: 60%;
+  margin: 2% auto;
+  width: 80%;
 }
 
 .section {
@@ -38,7 +38,7 @@ body {
   /*color: #777777;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 25px;
+  line-height: 1em;
   color: #363636;
   font-size: 18px;
 
@@ -46,23 +46,22 @@ body {
 
 .bigfont {
     font-size: 30px;
-    font-weight: 900;
-    line-height: inherit;
+    font-weight: 400;
+    line-height: 1.2em;
 }
 
 .content-big {
-
   font-size:45px;
-
 }
 
 .huge {
   font-size: 60px; 
   font-weight: 600;
-  line-height: 0.2em;
+  line-height: 1em;
+  margin-bottom: 1em;
 }
 
-a {color:#aaaaaa;
+a {color:blue;
   text-decoration: none;
   }
 
