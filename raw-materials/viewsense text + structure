@@ -1,0 +1,53 @@
+
+The interface was created in several iterations, all of them based in the same underlying concept:Images should be searchable across different dimensions This meant in practice that images shouldn't follow a folder structure but instead be searchable by their content characteristics. This allowed users to find images through different pathways, increasing the likelihood that someone would eventually reach the desired image. Besides that, this type of organization could allow users to create several "albums" catered to a specific use case.
+
+Key ideas
+
+Innovative organization of images
+Innovative exploration
+Creating a testable prototype
+
+Prototype 1
+
+(image 1 + 2)
+
+What went good?
+The tags were easily accessible and the color coding for types of tags was a good idea! This configuration also helped me to refine the tag categorization as the categories created in this prototype were too specific to be usable. This insight also lead to the idea of generalizing them and to pay deeper attention to their ontology.
+
+Main issues
+The interface was fast but didn't look so good. Besides that it wasn't scalable in case of having many different tags, however its main problem was that it took the focus away from the images too much. The idea though evolved to inform the final iteration of one of the image exploration modes.
+
+Prototype 2
+
+(image 1)
+The design was refined to bring the focus to the images themselves. The tag exploration was given its own space and the idea that users would search tags while browsing images concurrently was proven incorrect. The focus was on drilling down to a custom set of combinations of tags. 
+
+(image 2)
+The second interface (visualization) offered a great way for people to understand the relationships of their images, offering insights such as figuring out that images that matched a certain mood were more likely to be paired to specific objects or seasons.
+
+(image 3)
+The great challenge came in this case in the implementation phase. I had not have up to this point any real experience with programming and I knew that this prototype would require me to do many complex things for it to work for testing. In spite of that, I was able to create a prototype with a filterable set of images and accurate relationship visualizations, coded in Javascript using several libraries. 
+
+The prototype helped me in finalizing my research but, most importantly, gave me an introduction to understanding how programmers while implementing interfaces.
+
+(image 4)
+
+UX Research
+After having the prototype ready, I conducted user testing, using quantitative and qualitative methods to validate the hypotheses laid out on my thesis. Besides that I learned how to systematically benchmark my design against established solutions and how to build upon these solutions to create something innovative. After all, so much work has been done on the basics that often gets ignored.
+
+You can read more about it here(link to thesis)
+
+
+Challenges
+- Understanding how to build an interface for mobile devices
+- Learning how to program
+
+Results
+
+- Finished my thesis
+- Created a functional application
+
+Deliverables & specific areas of work
+
+Functional application
+Thesis
