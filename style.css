@@ -21,7 +21,7 @@
 
 .container {
   margin: 2% auto;
-  width: 50%;
+  width: 100%;
 }
 
 .section {
@@ -75,20 +75,6 @@ a {
   text-decoration: none;
   }
 
-
-
-
-
-
-.experiment {
-
-  background-image: url("images/ysura-V3/main-menu.jpg");
-  background-clip: content-box;
-  background-position: center;
-  background-blend-mode: 
-
-}
-
 h2 {
   margin-top: 2em;  
   font-size: 2rem; 
@@ -134,19 +120,35 @@ a {
 }
 
 .project {
+  display: flex;
+  flex-basis: 10px;
+  flex-direction: column;
+  color: #888888;
+  transition: border 0.1s;
   transition: box-shadow 0.2s ease;
-  transition: width 0.2s;
   box-shadow: 1px 1px 4px #aaaaaa;
   padding: 20px;
   margin-bottom: 2em;
   border-radius:1%;
+  border: 2px solid rgba(0,0,0,0);
+}
+
+.project h3 {
+    color:#999999;
 }
 
 .project:hover {
   box-shadow: 4px 4px 50px #aaaaaa;
+  transition: color 1s ease;
   color:black;
-  border: none;
-  width: 100%
+  border: 2px solid #dddddd;
+}
+
+.project:hover h3{
+  transition: color 2s ease;
+  color:red;
+
+
 }
 
 .card-image {
@@ -159,12 +161,16 @@ a {
   margin-top: 0.5em;
 }
 
+.first {
+  margin-top: 150px;
+}
 
-@media (max-width: 1024px) {
+
+@media (max-width: 5000px) {
 
       .container {
-      width: 90%;
-      /*background-color:pink; */
+      width: 80%;
+      display: flex;
     }
 
       .bigfont {
