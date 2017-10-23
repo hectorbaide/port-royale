@@ -120,7 +120,7 @@ a {
 }
 
 .project {
-  display: flex;
+  /*display: flex;*/
   flex-basis: 10px;
   flex-direction: column;
   color: #888888;
@@ -170,7 +170,7 @@ a {
 
       .container {
       width: 80%;
-      display: flex;
+      /*display: flex;*/
     }
 
       .bigfont {
