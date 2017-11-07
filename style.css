@@ -17,7 +17,7 @@ position: fixed;
 }
 
 .container {
-  margin: 2% auto;
+  margin-left: 24px;
   width: 90%;
 }
 
@@ -64,16 +64,15 @@ body {
 
 a {
   text-decoration: none;
+  color:red;
   }
 
 h2 {
-  margin-top: 0px ;  
   font-size: 2rem; 
-  margin-bottom: -0.3em;
 }
 
 h3 {
-  margin-top: 2em;
+  margin-top: 0px ;
   margin-bottom: -1em;
   text-transform: uppercase;
   font-size: 16px;
@@ -107,7 +106,11 @@ ul {
 /*Projects and cards*/
 
 a {
-  color: #363655
+  color: orange;
+}
+
+a:hover {
+  color:red;
 }
 
 .project {
@@ -118,7 +121,7 @@ a {
   transition: border 0.1s;
   /*transition: box-shadow 0.2s ease;*/
   /*box-shadow: 1px 1px 4px #aaaaaa;*/
-  padding: 20px;
+  /*padding: 20px;*/
   /*margin-bottom: 2em;*/
   /*border-radius:1%;*/
   /*border: 2px solid rgba(0,0,0,0);*/
@@ -126,14 +129,6 @@ a {
 
 .project h3 {
     color:#999999;
-}
-
-.project:hover {
-  /*box-shadow: 4px 4px 50px #aaaaaa;*/
-  /*background-color: red;
-  transition: color 1s ease;
-  color:black;*/
-  /*border: 2px solid #dddddd;*/
 }
 
 .project:hover h3{
@@ -162,7 +157,7 @@ a {
 }
 
 .first {
-  margin-top: 5%;
+  margin-top: 85px;
 }
 
       .bigfont {
@@ -178,6 +173,8 @@ a {
 
       #header {
         font-size: 3rem;
+        background-color: red;
+        height: 65px; 
       }
 
       body {
@@ -186,13 +183,12 @@ a {
 	}
 
     h3 {
-      margin-bottom:-2rem;
+      margin-bottom:-3rem;
       font-size:0.8rem;
     }
 
     h2 {
       font-size: 3rem;
-      margin-bottom: -2rem;
     }
 	
 
@@ -201,16 +197,30 @@ a {
 /** LIGHTBOX MARKUP EXPERIMENT **/
 
 .grid {
-  width: 100%;
+  max-width: 100%;
+  /*border:1px solid red;*/
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.small {
+
+  max-width: 70%
+
 }
 
 
 
 .gallery-image {
-  max-width: 100%;
+  width: 100%;
 }
 
 .cell img{
+  display: block;
+  /*border:1px solid blue;*/
+}
+
+.doublecell img {
   display: block;
 }
 
@@ -219,15 +229,24 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: stretch;
   }
   .cell {
-    width: 50%;
+    width: 100%;
+    padding:10px;
+    /*border:1px solid blue;*/
   }
+}
+
+.doublecell {
+  width: calc(100%);
+  padding:10px;
+  /*border:1px solid green  ;*/
 }
 
 @media screen and (min-width: 1200px) {
   .cell {
-    width: calc(100% / 3);
+    max-width: calc(100% / 2.2);
   }
 }
 
@@ -235,4 +254,13 @@ a {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0 1rem;
+}
+
+
+
+.caption {
+  font-size: 20px;
+  margin-top: 0px;
+  background-color: yellow;
+  padding-left: 20px;
 }
