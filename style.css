@@ -1,27 +1,24 @@
-.nav-link{
-      color:white;
-}
-
 #header {
-  position: fixed;
-  top:0;
-  display: flex;
+position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
-
-
 
 #header li {
-  position: relative;
+  
   display: inline;
   float: left;
   margin-right: 40px;
   margin-top: 0px;
+
   /*display:inline-block;*/
 }
 
 .container {
-  margin: 2% auto;
-  width: 50%;
+  margin-left: 24px;
+  width: 90%;
 }
 
 .section {
@@ -30,6 +27,10 @@
 
 .navbar {
   background-color: #111111;
+}
+
+.project p {
+  margin: 0px;
 }
 
 body {
@@ -50,16 +51,6 @@ body {
   margin: 0px;
 }
 
-
-
-.bigfont {
-    font-size: 50px;
-    font-weight: 900;
-    line-height: 1.2em;
-    margin-top:10%;
-    
-}
-
 .content-big {
   font-size:45px;
 }
@@ -73,30 +64,15 @@ body {
 
 a {
   text-decoration: none;
+  color:red;
   }
 
-
-
-
-
-
-.experiment {
-
-  background-image: url("images/ysura-V3/main-menu.jpg");
-  background-clip: content-box;
-  background-position: center;
-  background-blend-mode: 
-
-}
-
 h2 {
-  margin-top: 2em;  
   font-size: 2rem; 
-  margin-bottom: -0.3em;
 }
 
 h3 {
-  margin-top: 2em;
+  margin-top: 0px ;
   margin-bottom: -1em;
   text-transform: uppercase;
   font-size: 16px;
@@ -123,53 +99,72 @@ h3 {
 ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 1em;
+    margin: 0;
 }
 
 
 /*Projects and cards*/
 
 a {
-  color: #363655
+  color: orange;
+}
+
+a:hover {
+  color:red;
 }
 
 .project {
-  transition: box-shadow 0.2s ease;
-  transition: width 0.2s;
-  box-shadow: 1px 1px 4px #aaaaaa;
-  padding: 20px;
-  margin-bottom: 2em;
-  border-radius:1%;
+  /*display: flex;*/
+  /*flex-basis: 10px;*/
+  /*flex-direction: column;*/
+  color: #888888;
+  transition: border 0.1s;
+  /*transition: box-shadow 0.2s ease;*/
+  /*box-shadow: 1px 1px 4px #aaaaaa;*/
+  /*padding: 20px;*/
+  /*margin-bottom: 2em;*/
+  /*border-radius:1%;*/
+  /*border: 2px solid rgba(0,0,0,0);*/
 }
 
-.project:hover {
-  box-shadow: 4px 4px 50px #aaaaaa;
-  color:black;
-  border: none;
-  width: 100%
+.project h3 {
+    color:#999999;
+}
+
+.project:hover h3{
+  transition: color 2s ease;
+  color:red;
+
+
+}
+
+.small-caption {
+
+  margin: 0px;
+  -webkit-margin-before:0em;
+  -webkit-margin-after:0em;
+
 }
 
 .card-image {
   width: 100%;
-  border-radius: 1em;
+  /*border-radius: 1em;*/
 }
 
 .card-title {
   margin-bottom: 0.5em;
-  margin-top: 0.5em;
+  /*margin-top: 0.5em;*/
 }
 
-
-@media (max-width: 1024px) {
-
-      .container {
-      width: 90%;
-      /*background-color:pink; */
-    }
+.first {
+  margin-top: 85px;
+}
 
       .bigfont {
         font-size: 5rem;
-        margin-top: 16%;
+        font-weight: 900;
+        margin:0px;
+        /*line-height: 1.2rem;*/
       }
 
       .content-big {
@@ -178,6 +173,8 @@ a {
 
       #header {
         font-size: 3rem;
+        background-color: red;
+        height: 65px; 
       }
 
       body {
@@ -186,51 +183,84 @@ a {
 	}
 
     h3 {
-      margin-bottom:-2rem;
-      font-size:1.5rem;
+      margin-bottom:-3rem;
+      font-size:0.8rem;
     }
 
     h2 {
       font-size: 3rem;
-      margin-bottom: -2rem;
     }
 	
 
-}
+
 
 /** LIGHTBOX MARKUP EXPERIMENT **/
 
-.lightbox {
+.grid {
+  max-width: 100%;
+  /*border:1px solid red;*/
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.small {
+
+  max-width: 70%
+
+}
 
 
-  /** Default lightbox to hidden */
-  display: none;
 
-  /** Position and style */
-  position: fixed;
-  z-index: 999;
+.gallery-image {
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.95);
-  overflow: scroll;
-
 }
 
-.lightbox img {
-  /** Pad the lightbox image */
-  width:100%;
-  height:100%;
-  
+.cell img{
+  display: block;
+  /*border:1px solid blue;*/
 }
 
-.lightbox:target {
-  /** Remove default browser outline */
-  outline: none;
-
-  /** Unhide lightbox **/
+.doublecell img {
   display: block;
 }
 
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .cell {
+    width: 100%;
+    padding:10px;
+    /*border:1px solid blue;*/
+  }
+}
 
+.doublecell {
+  width: calc(100%);
+  padding:10px;
+  /*border:1px solid green  ;*/
+}
+
+@media screen and (min-width: 1200px) {
+  .cell {
+    max-width: calc(100% / 2.2);
+  }
+}
+
+.container-resp {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 1rem;
+}
+
+
+
+.caption {
+  font-size: 20px;
+  margin-top: 0px;
+  background-color: yellow;
+  padding-left: 20px;
+}
