@@ -1,7 +1,7 @@
 #header {
 position: fixed;
     top: 0;
-    left: 0;
+    left: 50px;
     right: 0;
     z-index: 100;
 }
@@ -25,30 +25,26 @@ position: fixed;
   /*width: 80%;*/
 }
 
-.navbar {
-  background-color: #111111;
-}
+
 
 .project p {
   margin: 0px;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 
+  font-family: Work Sans, -apple-system, BlinkMacSystemFont, 
     "Segoe UI", "Roboto", "Oxygen", 
     "Ubuntu", "Cantarell", "Fira Sans", 
     "Droid Sans", "Helvetica Neue", sans-serif;
-
-  /*font-family: 'Helvetica-Neue', 'Helvetica', sans-serif;*/
-  background-color: #FFFFFF;
-  /*border: 40px solid #;*/
-  /*color: #777777;*/
+  background-color: #fcfcfc;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.9em;
   color: #363655;
-  /*font-size: 18px;*/
   margin: 0px;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  background-color: #f0f0fa;
 }
 
 .content-big {
@@ -106,7 +102,7 @@ ul {
 /*Projects and cards*/
 
 a {
-  color: orange;
+  color: #0086aa;
 }
 
 a:hover {
@@ -117,7 +113,7 @@ a:hover {
   /*display: flex;*/
   /*flex-basis: 10px;*/
   /*flex-direction: column;*/
-  color: #888888;
+  /*color: #f10b10;*/
   transition: border 0.1s;
   /*transition: box-shadow 0.2s ease;*/
   /*box-shadow: 1px 1px 4px #aaaaaa;*/
@@ -128,14 +124,8 @@ a:hover {
 }
 
 .project h3 {
-    color:#999999;
-}
-
-.project:hover h3{
-  transition: color 2s ease;
-  color:red;
-
-
+    
+    color:black;
 }
 
 .small-caption {
@@ -153,6 +143,7 @@ a:hover {
 
 .card-title {
   margin-bottom: 0.5em;
+  border-top: 2px solid black;
   /*margin-top: 0.5em;*/
 }
 
@@ -160,30 +151,27 @@ a:hover {
   margin-top: 85px;
 }
 
-      .bigfont {
-        font-size: 5rem;
-        font-weight: 900;
-        margin:0px;
-        /*line-height: 1.2rem;*/
-      }
+.bigfont {
+  font-size: 5rem;
+  font-weight: 900;
+  margin:0px;
+  /*line-height: 1.2rem;*/
+}
 
-      .content-big {
-        font-size: 2rem;
-      }
+.content-big {
+  font-size: 2rem;
+}
 
-      #header {
-        font-size: 3rem;
-        background-color: red;
-        height: 65px; 
-      }
+#header {
+  font-size: 1.8rem;
+  background-color: transparent;
+  /*border-bottom: 2px solid black;*/
+}
 
-      body {
-		font-size: 2rem;
-    line-height: 3.2rem;
-	}
+  
 
     h3 {
-      margin-bottom:-3rem;
+      margin-bottom:-1rem;
       font-size:0.8rem;
     }
 
@@ -244,9 +232,21 @@ a:hover {
   /*border:1px solid green  ;*/
 }
 
+
 @media screen and (min-width: 1200px) {
   .cell {
     max-width: calc(100% / 2.2);
+  }
+
+  .grid {
+    width: 90%;
+    margin:auto;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .grid {
+    width:70%;
   }
 }
 
@@ -263,4 +263,8 @@ a:hover {
   margin-top: 0px;
   background-color: yellow;
   padding-left: 20px;
+}
+
+.subtitle {
+  margin:0px;
 }
