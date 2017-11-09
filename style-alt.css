@@ -1,24 +1,41 @@
+/*super general + resets*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0px;
+  font-size: 32px;
+  font-family: helvetica neue;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, p, ul {
+margin:0px;
+}
+
+
 /*Header*/
 
-#header {
-position: relative;
-display: block;
-width: 100%;
-background-color: black;
+.header {
 color:white;
-height: 40px;
 }
 
-#header li {
-  margin: auto;
-  display: inline;
+.header a {
+  top: 20px;
+  right:20px;
   float: right;
-  vertical-align: auto;
-}
-
-#header ul {
-    display: inline;
-    list-style-type: none;
+  position: fixed;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 3rem;
+  border:1px solid red;
+  background-color: white;
 }
 
 /*Utility*/
@@ -32,10 +49,7 @@ height: 40px;
   margin: 0px;
 }
 
-body {
-  margin:0px;
-  font-size: 32px;
-}
+
 
 .content-big {
 }
@@ -43,24 +57,8 @@ body {
 .huge {
 }
 
-
-
-
 .fullbleed {
   width: 100%;
-}
-
-.outline {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-  align-self: center;
-
-
-}
-
-.outline-child {
-  flex: 1;
 }
 
 /*Projects and cards*/
@@ -84,6 +82,10 @@ body {
   /*margin-top: 0.5em;*/
 }
 
+.bio {
+  padding: 200px 70px 70px 70px ;
+  width: 68%;
+}
 
 
 
@@ -98,18 +100,12 @@ body {
 
 .grid {
   max-width: 100%;
-  /*border:1px solid red;*/
-  
   justify-content: space-between;
 }
 
 .small {
-
   max-width: 70%
-
 }
-
-
 
 .gallery-image {
   width: 100%;
@@ -124,16 +120,29 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 400px) {
+
+
+
   .grid {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
+    width: 90%;
+    margin: auto;
   }
   .cell {
     width: 100%;
   }
+
+  .bio {
+    padding: 140px 20px 20px 20px ;
+    width: 80%;
+
+  }
+
+  
 }
 
 .doublecell {
@@ -143,7 +152,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .cell {
-    max-width: calc(100% / 2.2);
+    max-width: calc(100% / 2);
   }
 
   .grid {
@@ -155,6 +164,7 @@ body {
 @media screen and (min-width: 1700px) {
   .grid {
     width:70%;
+    margin: auto;
   }
 }
 
@@ -168,4 +178,10 @@ body {
   font-size: 20px;
   margin-top: 0px;
   background-color: yellow;
+}
+
+.myname {
+  float: left;
+  font-size: 3rem;
+  padding: 12px;
 }
