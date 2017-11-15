@@ -12,8 +12,8 @@ body {
     line-height: 140%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    /*background-color: #b2f2c9;*/
-    background: radial-gradient(#eedcda, #ffffff);
+    /*background-color: #e6dd93;*/
+    /*background: radial-gradient(#000000, #ae65af)*/;
 
 
     
@@ -98,6 +98,11 @@ h1 {
 }
 /*Projects and cards*/
 
+.project {
+    background-color: white;
+    padding: 12px
+}
+
 .card-image {
     width: 100%;
     /*border-radius: 1em;*/
@@ -105,7 +110,7 @@ h1 {
 .card-title {
     
     margin-bottom: 20px;
-    text-decoration: overline;
+    /*text-decoration: overline;*/
     text-decoration-color: #333333;
 
     /*margin-top: 0.5em;*/
@@ -165,7 +170,8 @@ h1 {
     .bio {
         padding: 140px 20px 20px 20px;
         width: 90%;
-        transform: rotate3d(-10,1,-10,20deg);
+        color: white
+        
         
     }
 
@@ -215,7 +221,7 @@ h1 {
     max-width: 1280px;
 }
 .caption {
-    font-size: 20px;
+    font-size: 0.6em;
     margin-top: 0px;
     text-align: center;
     font-variant: bold;
@@ -254,4 +260,34 @@ h1 {
 .fun {
 
     /*add cool animation or interaction*/
+}
+
+.divider {
+    position: relative;
+    width:100%;
+    height: 2px;
+    background-color: #bdbdbd;
+    margin:30px 0px 30px 0px;
+
+}
+
+.bg-electroblue {
+
+    background-color: #001fff;
+    color:white;
+}
+
+.bg-rainbow {
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+    color: white;
+    text-shadow: 2px 2px #ff0000;
+}
+
+.bg-rainbow p {
+    background-color: black;
+    padding:10px;
+}
+
+.portrait {
+    max-height: 50px;
 }
