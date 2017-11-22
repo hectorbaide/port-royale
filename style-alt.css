@@ -8,7 +8,7 @@ body {
     margin: 0px;
     font-size: 32px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: black;
+    color: #393939;
     line-height: 140%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -60,6 +60,9 @@ h1 {
 
 }
 
+h3 {
+    font-size: 1em;
+}
 /*Header*/
 
 .header {
@@ -170,7 +173,6 @@ h1 {
     .bio {
         padding: 140px 20px 20px 20px;
         width: 90%;
-        color: white
         
         
     }
@@ -235,7 +237,7 @@ h1 {
 .bigfont {
     font-size:3em;
     line-height: 80%;
-    border:15px solid black;
+    border:15px solid #393939;
     display: inline-block;
     padding: 20px 10px 20px 10px
 }
