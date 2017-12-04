@@ -49,7 +49,7 @@ h1,h2,h3,h4 {
 }
 
 p,div {
-    font-family: 'Crimson Text';
+    font-family: 'georgia';
     line-height: 1.375em;
     /*color: #dddddd;*/
 }
@@ -73,11 +73,12 @@ h3 {
     position: fixed;
 }
 .header a {
+    font-family: helvetica;
     text-align: center;
     padding:5px 14px 5px 14px;
     text-decoration: none;
-    font-size: 30px;
     background-color: transparent;
+    text-transform: uppercase;
     font-weight: bold;
     border:2px solid red;
     box-shadow: 5px 5px 0px 0px;
@@ -126,8 +127,6 @@ h3 {
 .grid {
     max-width: 100%;
     justify-content: space-between;
-    /*background-color: rgba(0,0,0,0.5);*/
- /*   border: 1px solid #dddddd;*/
 }
 .small {
     max-width: 70%
@@ -165,6 +164,12 @@ h3 {
         width: 90%;
         margin: auto;
     }
+
+    .thirdcell {
+          width: 100%;
+        padding: 20px;
+    }
+
     .cell {
         width: 100%;
         padding: 20px;
@@ -183,7 +188,7 @@ h3 {
 
     .header a {
     
-    font-size: 60px;
+    font-size: 30px;
 }
 
 }
@@ -201,13 +206,17 @@ h3 {
         /*border: 1px solid #dddddd;*/
     }
 
+    .thirdcell {
+        max-width: calc(100% / 3);
+    }
+
     .cell:hover {
         rotate(90deg);
 
     }
 
     .grid {
-        width: 85%;
+        width: 65%;
         margin: auto;
     }
     body {
@@ -292,4 +301,19 @@ h3 {
 
 .portrait {
     max-height: 50px;
+}
+
+.project-info {
+    border: 5px solid #393939;
+    padding: 30px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.subtitle {
+    align-self: center;
+}
+
+.quotation {
+    text-align: center;
 }
