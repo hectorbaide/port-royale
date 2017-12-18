@@ -1,0 +1,288 @@
+/*super general + resets*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: #555566;
+    font-family: sans-serif;
+}
+
+
+/*Grid definitions*/
+
+.grid {
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.gallery-image {
+    width: 100%;
+}
+
+.cell img {
+    display: block;
+}
+
+.round {
+  border-radius: 10px;
+}
+
+.doublecell {
+    width: calc(100%);
+    padding: 20px;
+}
+
+.doublecell img {
+    display: block;
+}
+
+/*Typography*/
+
+div, p, li, a{
+    font-size:28px;
+    line-height: 1.6em;
+}
+
+h3 {
+    font-size: 37px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 67px;
+}
+
+.caption{
+    font-size: 21px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Header*/
+.header {
+    color: white;
+    top: 20px;
+    right: 20px;
+    float: right;
+    position: fixed;
+}
+
+.header a {
+    text-align: center;
+    padding:5px 14px 5px 14px;
+    text-decoration: none;
+    background-color: white;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 0px 0px;
+}
+
+.content-big {} .huge {} .fullbleed {
+    width: 100%;
+}
+
+
+/*Projects and cards*/
+.project {
+    /*  */
+}
+
+.card-image {
+    width: 100%;
+}
+.card-title {
+    margin: 0px;
+}
+
+.quote {
+}
+
+.project-type {
+    font-size: 21px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+@media screen and (min-width: 400px), (min-resolution: 192dpi) {    
+    
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: stretch;
+        width: 80%;
+        margin: auto;
+    }
+
+    .twothirdcell {
+        max-width: calc(100% * 0.66);
+    }
+
+    .thirdcell {
+          width: 100%;
+        padding: 20px;
+    }
+
+    .cell {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .round {
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+    .cell {
+        max-width: calc(100% / 2);
+    }
+
+    .thirdcell {
+        max-width: calc(100% / 2);
+    }
+
+    .grid {
+        width: 80%;
+        margin: auto;
+    }
+
+    .bio {
+    padding: 140px 70px 70px 70px;
+    width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .cell {
+        max-width: calc(100% / 2);
+    }
+
+    .thirdcell {
+        max-width: calc(100% / 3);
+    }
+
+    .grid {
+        width: 80%;
+        margin: auto;
+    }
+
+    .bio {
+    padding: 140px 70px 70px 70px;
+    width: 50%;
+    }
+
+}
+
+.caption {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.bigfont {
+    /*font-size:3em;*/
+    line-height: 80%;
+    border: 15px solid #555566;
+    display: inline-block;
+    padding: 20px 10px 20px 10px;
+}
+
+.first {
+    margin-top: 85px;
+}
+
+.fun {
+    /*add cool animation or interaction*/
+}
+
+.divider {
+    position: relative;
+    width:100%;
+    height: 2px;
+    background-color: #bdbdbd;
+    margin:30px 0px 30px 0px;
+}
+
+.bg-electroblue {
+
+    background-color: #4f6d89;
+    color:white;
+}
+
+.bg-rainbow {
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+    color: white;
+    text-shadow: 2px 2px #ff0000;
+}
+
+
+
+.bg-rainbow p {
+    background-color: black;
+    padding:10px;
+}
+
+.bg-dull {
+    background: linear-gradient(to bottom, red, yellow, blue); /* Standard syntax (must be last) */
+    color: white;
+    text-shadow: 2px 2px #AAAAAA;
+}
+
+.project-info {
+    border: 3px solid #393939;
+    font-size: 2px;
+    padding: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.bigquote {
+
+}
+
+.grid-100 {
+    width:100%;
+}
+
+.bg-litegray {
+    background-color: #fcfcfc;   
+}
+
+.ysv3bg {
+    background-color: rgba(0,0,0,0.8);
+    background-image: url("images/ysura-v3/cover-alt.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.ysmbbg {
+    background-color: rgba(0,0,0,0.8);
+    background-image: url("images/ysura-mobile/ys-mobile-cover-2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.footlinks a{
+    margin-right: 20px;
+}
+
+#footers {
+    justify-content: center;
+}
+
+.last {
+    
+    padding: 2em
+}
+
+}
