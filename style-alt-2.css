@@ -285,4 +285,9 @@ a {
     padding: 2em
 }
 
+.darktheme{
+    background-color: #000000;
+    color:#FFFF00;
+}
+
 }
