@@ -268,16 +268,20 @@ a {
 }
 
 .project-info {
-    border: 3px solid #393939;
-    font-size: 2px;
-    padding: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    /*border: 3px solid #393939;*/
+    /*font-size: 2px;*/
+    /*padding: 2em;*/
+    /*margin-top: 1em;*/
+    /*margin-bottom: 1em;*/
 }
 
-.bigquote {
+.project-info .cell p {
+
+    margin-bottom: 0px;
 
 }
+
+
 
 .grid-100 {
     width:100%;
