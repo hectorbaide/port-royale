@@ -45,7 +45,12 @@ p {
 
 h1,h2,h3,h4 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #555588
+    color: #FF6865
+}
+
+.project h3,h4 {
+    margin-top: 0px;
+    color:#393939;
 }
 
 
@@ -120,7 +125,7 @@ h3 {
 }
 .card-title {
     
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     /*text-decoration: overline;*/
     text-decoration-color: #333333;
 
@@ -160,7 +165,7 @@ h3 {
 @media screen and (min-width: 400px), (min-resolution: 192dpi) {
     
     body {
-        font-size: 50px;
+        font-size: 40px;
     }
 
 
